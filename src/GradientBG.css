@@ -1,0 +1,41 @@
+.GradientBG {
+    padding: 16px 24px;
+    /* position: relative; */
+  }
+  
+  .GradientBG::after {
+    position: absolute;
+    content: "";
+    border-radius: 20px;
+    margin-left: 36.3%;
+    margin-top: 220px;
+    height: 20px;
+    width: 25.5%;
+    transform: scale(0.9) translateZ(0.7);
+    filter: blur(5px);
+    background: linear-gradient(to left, 
+      #9e182c,
+      #e4428d,
+      #c42da8,
+      #1d39a0,
+      #9e16c3,
+      #c42da8,
+      #b13871,
+      #ff5770
+    ); 
+    background-size: 200% 200%;
+    animation: animateGlow 2.5s linear infinite;
+  }
+  
+  @keyframes animateGlow {
+    0% {
+      background-position: 0% 50%;
+    }
+  
+    100% {
+      background-position: 200% 50%;
+    }
+  }
+  
+  
+  

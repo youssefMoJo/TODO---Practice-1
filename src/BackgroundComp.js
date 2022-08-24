@@ -7,7 +7,6 @@ function BackgroundComp() {
             height: "400px",
             position: "absolute",
             width: "100%",
-
         }}>
 
         </div>
