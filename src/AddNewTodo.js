@@ -1,6 +1,7 @@
 import { useState } from "react"
 import './AddNewTodo.css';
 import GradientBG from "./GradientBG"
+import TodoListContainer from "./TodoListContainer"
 
 const AddNewTodo = () => {
     const [todoMessage, setTodoMessage] = useState("")
@@ -28,7 +29,7 @@ const AddNewTodo = () => {
             >
             </textarea>
             <GradientBG />
-
+            <TodoListContainer />
         </div>
     )
 }

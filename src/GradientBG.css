@@ -11,17 +11,19 @@
     margin-top: 220px;
     height: 20px;
     width: 25.5%;
-    transform: scale(0.9) translateZ(0.7);
-    filter: blur(5px);
+    transform: scale(0.9) translateZ(0.9);
+    filter: blur(15px);
+    background-color: black;
     background: linear-gradient(to left, 
-      #9e182c,
-      #e4428d,
-      #c42da8,
-      #1d39a0,
-      #9e16c3,
-      #c42da8,
-      #b13871,
-      #ff5770
+        #ff5778,
+        #e4428d,
+        #c42da8,
+        #9e16c3,
+        #6501de,
+        #9e16c3,
+        #c42da8,
+        #e4428d,
+        #dd5778
     ); 
     background-size: 200% 200%;
     animation: animateGlow 2.5s linear infinite;

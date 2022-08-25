@@ -1,0 +1,10 @@
+.TodoListContainer{
+    width: 25%;
+    position: absolute;
+    background-color: rgb(36, 41, 41);
+    margin-left: 37.5%;
+    margin-top: 260px;
+    border-radius: 20px;
+    height: 200px;
+    padding: 10px;
+}
