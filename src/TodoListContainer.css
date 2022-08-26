@@ -1,10 +1,74 @@
-.TodoListContainer{
+.TodoListContainerShow{
     width: 25%;
     position: absolute;
     background-color: rgb(36, 41, 41);
     margin-left: 37.5%;
     margin-top: 260px;
     border-radius: 20px;
-    height: 200px;
-    padding: 10px;
+    height: 550px;
+    padding: 12px;
+    transition: opacity 0.4s;
+    opacity: 1;
+    overflow-y: auto;
+    
 }
+.TodoListContainerHide{
+    opacity: 0;
+}
+.TodoListContainerShow::-webkit-scrollbar {
+    display: none;
+  }
+
+.todoElement{
+    color: black;
+    background-color: white;
+    border-radius: 15px;
+    padding: 15px;
+    margin-top: 10px;
+    display: flex;
+    height: 20px;
+}
+.todoElement:hover + #deleteTodoButton {
+    background-color: rgb(233, 231, 231);
+}
+
+.deleteTodoButton {
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    height:fit-content;
+    border-color: #ffffff;
+    cursor: pointer;
+    background-color: rgb(212, 47, 32);
+    margin-top: -14px;
+    margin-right: -14px;
+    padding: 15px;
+    border-radius: 0px 15px 15px 0px;
+    /* display: none; */
+}
+#deleteButtonHide {
+    display: none;
+}
+#deleteButtonShow {
+    display: block;
+}
+.deleteTodoButton:hover {
+    background-color: rgb(243, 35, 16);
+}
+
+input[type=checkbox]{
+    margin-right: 10px;
+}
+label{
+    width: 100%;
+}
+
+input[type=checkbox] + label {
+    color: rgb(0, 0, 0);
+    font-style: normal;
+  } 
+
+input[type=checkbox]:checked + label {
+    color: rgb(149, 143, 143);
+    font-style: italic;
+  }

@@ -5,9 +5,12 @@ import TodoListContainer from "./TodoListContainer"
 
 const AddNewTodo = () => {
     const [todoMessage, setTodoMessage] = useState("")
+    const [todoList, setTodoList] = useState([])
+    let todoListClassStatus = todoList.length > 0 ? "TodoListContainerShow" : "TodoListContainerHide"
 
     const onEnterPress = (e) => {
         if (e.keyCode === 13 && e.shiftKey === false) {
+            setTodoList(() => [...todoList, todoMessage])
             setTodoMessage("")
             e.preventDefault();
         }
@@ -17,6 +20,10 @@ const AddNewTodo = () => {
         setTodoMessage(event.target.value);
     };
 
+    const removeTodoElementId = (id) => {
+        todoList.splice(id, 1)
+        setTodoList([...todoList])
+    }
 
     return (
         <div>
@@ -26,10 +33,15 @@ const AddNewTodo = () => {
                 onKeyDown={onEnterPress}
                 value={todoMessage}
                 onChange={handleMessageChange}
+                maxLength="50"
             >
             </textarea>
             <GradientBG />
-            <TodoListContainer />
+            <TodoListContainer
+                todoListContainerStatus={todoListClassStatus}
+                todoList={todoList}
+                removeTodoElementId={removeTodoElementId}
+            />
         </div>
     )
 }

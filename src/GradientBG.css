@@ -7,12 +7,12 @@
     position: absolute;
     content: "";
     border-radius: 20px;
-    margin-left: 36.3%;
-    margin-top: 220px;
-    height: 20px;
-    width: 25.5%;
-    transform: scale(0.9) translateZ(0.9);
-    filter: blur(15px);
+    margin-left: 35.5%;
+    margin-top: 195px;
+    height: 27px;
+    width: 27%;
+    transform: scale(0.9) translateZ(0.1);
+    filter: blur(20px);
     background-color: black;
     background: linear-gradient(to left, 
         #ff5778,
@@ -26,7 +26,7 @@
         #dd5778
     ); 
     background-size: 200% 200%;
-    animation: animateGlow 2.5s linear infinite;
+    animation: animateGlow 2s linear infinite;
   }
   
   @keyframes animateGlow {
