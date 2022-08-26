@@ -1,8 +1,8 @@
 import './App.css';
-import BackgroundComp from "./BackgroundComp"
+import BackgroundComp from "./Components/BackgroundComp"
 import Title from "./Title"
-import BackgroundColor from "./BackgroundColor"
-import AddNewTodo from "./AddNewTodo"
+import BackgroundColor from "./Components/BackgroundColor"
+import AddNewTodo from "./Components/AddNewTodo"
 
 function App() {
   return (

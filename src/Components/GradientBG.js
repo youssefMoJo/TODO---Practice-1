@@ -8,5 +8,4 @@ const GradientBG = () => {
     )
 }
 
-
 export default GradientBG

@@ -1,4 +1,4 @@
-import backgroundImg from "./img/background.jpg"
+import backgroundImg from "../img/background.jpg"
 
 function BackgroundComp() {
     return (
