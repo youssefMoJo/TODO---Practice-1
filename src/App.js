@@ -1,6 +1,6 @@
 import './App.css';
 import BackgroundComp from "./Components/BackgroundComp"
-import Title from "./Title"
+import Title from "./Components/Title"
 import BackgroundColor from "./Components/BackgroundColor"
 import AddNewTodo from "./Components/AddNewTodo"
 
