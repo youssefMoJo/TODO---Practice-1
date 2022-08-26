@@ -10,7 +10,9 @@ const AddNewTodo = () => {
 
     const onEnterPress = (e) => {
         if (e.keyCode === 13 && e.shiftKey === false) {
-            setTodoList(() => [...todoList, todoMessage])
+            let todoObj = { "text": todoMessage, "checked": false, "deleteButtonAppear": false }
+            setTodoList([...todoList, todoObj])
+            todoObj = {}
             setTodoMessage("")
             e.preventDefault();
         }
