@@ -12,6 +12,10 @@ const TodoListContainer = (props) => {
 
     }
 
+    const changeTodoCheckingStatus = (index) => {
+        props.changeTodoCheckingStatus(index)
+    }
+
     return (
         <div className={props.todoListContainerStatus}>
             {todoList.map((todoObj, index) => {
@@ -21,7 +25,7 @@ const TodoListContainer = (props) => {
                     className="todoElement"
                     key={index}
                 >
-                    <input type="checkbox" id="ossm" name="ossm" />
+                    <input type="checkbox" onChange={() => changeTodoCheckingStatus(index)} checked={todoList[index].checked} id="ossm" name="ossm" />
                     <label > {todoObj.text}</label>
 
                     {

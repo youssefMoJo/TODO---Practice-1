@@ -12,7 +12,7 @@
     height: 27px;
     width: 27%;
     transform: scale(0.9) translateZ(0.1);
-    filter: blur(20px);
+    filter: blur(15px);
     background-color: black;
     background: linear-gradient(to left, 
         #ff5778,
@@ -26,7 +26,7 @@
         #dd5778
     ); 
     background-size: 200% 200%;
-    animation: animateGlow 2s linear infinite;
+    animation: animateGlow 1.4s linear infinite;
   }
   
   @keyframes animateGlow {

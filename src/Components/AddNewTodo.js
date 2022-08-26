@@ -36,6 +36,10 @@ const AddNewTodo = () => {
             setTodoList([...todoList])
         }
     }
+    const changeTodoCheckingStatus = (index) => {
+        todoList[index].checked = !todoList[index].checked
+        setTodoList([...todoList])
+    }
     return (
         <div>
             <textarea
@@ -53,6 +57,7 @@ const AddNewTodo = () => {
                 todoList={todoList}
                 removeTodoElementId={removeTodoElementId}
                 changeDeleteButtonStatus={changeDeleteButtonStatus}
+                changeTodoCheckingStatus={changeTodoCheckingStatus}
             />
         </div>
     )
