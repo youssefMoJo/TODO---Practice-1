@@ -26,7 +26,16 @@ const AddNewTodo = () => {
         todoList.splice(id, 1)
         setTodoList([...todoList])
     }
+    const changeDeleteButtonStatus = (status, index) => {
 
+        if (status === "enter") {
+            todoList[index].deleteButtonAppear = true
+            setTodoList([...todoList])
+        } else {
+            todoList[index].deleteButtonAppear = false
+            setTodoList([...todoList])
+        }
+    }
     return (
         <div>
             <textarea
@@ -43,6 +52,7 @@ const AddNewTodo = () => {
                 todoListContainerStatus={todoListClassStatus}
                 todoList={todoList}
                 removeTodoElementId={removeTodoElementId}
+                changeDeleteButtonStatus={changeDeleteButtonStatus}
             />
         </div>
     )
